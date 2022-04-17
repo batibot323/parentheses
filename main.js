@@ -1,7 +1,18 @@
 let awitSakit = [];
 myFunction(4, 4, "");
 console.log(awitSakit);
-console.log(parseParenthesis(4));
+let jet = parseParenthesis(4)
+console.log(jet);
+
+awitSakit.forEach((value, index) => {
+    let jetIndex = jet.indexOf(value);
+    console.log(`awitSakit ${index}, ${value} is equal to jet ${jetIndex}`);
+})
+
+jet.forEach((value, index) => {
+    let awitSakitIndex = awitSakit.indexOf(value);
+    console.log(`jet ${index}, ${value} is equal to awitSakit ${awitSakitIndex}`);
+})
 
 function myFunction(left, right, currentString) {
     if (left > 0) {
